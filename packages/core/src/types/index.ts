@@ -1,4 +1,4 @@
-import { AppInfoType } from "@heimdallr-sdk/types";
+import { AppInfoType } from '@star-monitor-sdk/types';
 
 export interface CoreContextType {
   app: AppInfoType;

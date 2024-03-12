@@ -3,7 +3,7 @@ import { BrowserSubTypes, EventTypes, PlatformTypes } from './constant';
 
 export interface AppInfoType {
   name: string;
-  leader: string;
+  leader?: string;
   desc?: string;
 }
 
@@ -15,7 +15,7 @@ export interface Dsn {
   /**
    * 应用初始化接口地址
    */
-  init: string;
+  init?: string;
   /**
    * 信息上报接口地址
    */
@@ -41,5 +41,5 @@ export interface ClientInfoType {
   page_title?: string;
   path?: string;
   language?: string;
-  user_agent?: string
+  user_agent?: string;
 }

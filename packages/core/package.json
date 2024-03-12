@@ -1,7 +1,7 @@
 {
-  "name": "@heimdallr-sdk/core",
+  "name": "@star-monitor-sdk/core",
   "version": "0.0.24",
-  "description": "@heimdallr-sdk/core",
+  "description": "@star-monitor-sdk/core",
   "license": "MIT",
   "author": "LuciferHuang",
   "main": "dist/core.umd.js",
@@ -34,7 +34,7 @@
     "build:esm": "rimraf esm && tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@heimdallr-sdk/types": "^0.0.15",
-    "@heimdallr-sdk/utils": "^0.0.19"
+    "@star-monitor-sdk/types": "^0.0.15",
+    "@star-monitor-sdk/utils": "^0.0.19"
   }
 }

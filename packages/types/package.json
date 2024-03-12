@@ -1,7 +1,7 @@
 {
-  "name": "@heimdallr-sdk/types",
+  "name": "@star-monitor-sdk/types",
   "version": "0.0.15",
-  "description": "@heimdallr-sdk/types",
+  "description": "@star-monitor-sdk/types",
   "license": "MIT",
   "author": "LuciferHuang",
   "main": "esm/index.js",

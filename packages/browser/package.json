@@ -1,5 +1,5 @@
 {
-  "name": "@heimdallr-sdk/browser",
+  "name": "@star-monitor-sdk/browser",
   "version": "0.0.29",
   "description": "A SDK For Monitoring Browser Errors",
   "license": "MIT",
@@ -35,8 +35,8 @@
     "build:esm": "rimraf esm && tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@heimdallr-sdk/core": "^0.0.24",
-    "@heimdallr-sdk/types": "^0.0.15",
-    "@heimdallr-sdk/utils": "^0.0.19"
+    "@star-monitor-sdk/core": "^0.0.24",
+    "@star-monitor-sdk/types": "^0.0.15",
+    "@star-monitor-sdk/utils": "^0.0.19"
   }
 }

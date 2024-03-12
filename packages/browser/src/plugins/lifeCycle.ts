@@ -6,8 +6,8 @@ import {
   PageLifeType,
   ReportDataType,
   StoreType
-} from '@heimdallr-sdk/types';
-import { formatDate, generateUUID, getCookie, getStore, getDeepPropByDot } from '@heimdallr-sdk/utils';
+} from '@star-monitor-sdk/types';
+import { formatDate, generateUUID, getCookie, getStore, getDeepPropByDot } from '@star-monitor-sdk/utils';
 import { LifecycleDataType, LifeCycleMsgType, LifecycleOptions } from '../types';
 
 function getStoreUserId(userIdentify: CustomerOptionType = {}) {

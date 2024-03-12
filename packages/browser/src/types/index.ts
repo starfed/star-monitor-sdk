@@ -4,8 +4,8 @@ import {
   CustomerOptionType,
   LinkMsgDataType,
   PageLifeType,
-  ReportDataMsgType,
-} from '@heimdallr-sdk/types';
+  ReportDataMsgType
+} from '@star-monitor-sdk/types';
 
 export interface BrowserReportPayloadDataType extends ClientInfoType {
   [key: string]: any;

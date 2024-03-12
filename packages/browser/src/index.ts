@@ -1,6 +1,6 @@
-import { Core, Breadcrumb } from '@heimdallr-sdk/core';
-import { IAnyObject, PlatformTypes, BrowserReportType } from '@heimdallr-sdk/types';
-import { formatDate, generateUUID, beacon, get, imgRequest, post } from '@heimdallr-sdk/utils';
+import { Core, Breadcrumb } from '@star-monitor-sdk/core';
+import { IAnyObject, PlatformTypes, BrowserReportType } from '@star-monitor-sdk/types';
+import { formatDate, generateUUID, beacon, get, imgRequest, post } from '@star-monitor-sdk/utils';
 import { BrowserOptionsType, BrowserReportPayloadDataType } from './types';
 import { nextTick } from './lib/nextTick';
 // 基础插件

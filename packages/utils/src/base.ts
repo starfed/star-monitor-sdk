@@ -1,4 +1,4 @@
-import { IAnyObject, TAG } from '@heimdallr-sdk/types';
+import { IAnyObject, TAG } from '@star-monitor-sdk/types';
 
 /**
  * 判断当前环境是否支持console

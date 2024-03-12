@@ -1,4 +1,4 @@
-import { IAnyObject } from '@heimdallr-sdk/types';
+import { IAnyObject } from '@star-monitor-sdk/types';
 
 /**
  * 生成UUID
@@ -113,7 +113,7 @@ export function countBytes(str: string): number {
 
 /**
  * 根据字节大小拆分字符串
- * @param str 
+ * @param str
  * @param maxBytes 最大字节数
  * @returns
  */

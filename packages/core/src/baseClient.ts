@@ -1,5 +1,5 @@
-import { BaseOptionsType, BasePluginType, IAnyObject, ConsoleTypes, TAG } from '@heimdallr-sdk/types';
-import { formateUrlPath, hasConsole } from '@heimdallr-sdk/utils';
+import { BaseOptionsType, BasePluginType, IAnyObject, ConsoleTypes, TAG } from '@star-monitor-sdk/types';
+import { formateUrlPath, hasConsole } from '@star-monitor-sdk/utils';
 import { Subscribe } from './lib/subscribe';
 import { CoreContextType } from './types';
 
@@ -16,7 +16,7 @@ export abstract class Core<O extends BaseOptionsType> {
   public context: CoreContextType;
   protected appID: string;
   protected readonly taskQueue: Array<IAnyObject>;
-  private isReady: Boolean;
+  private readonly isReady: Boolean;
 
   constructor(options: O) {
     this.options = options;
@@ -25,17 +25,13 @@ export abstract class Core<O extends BaseOptionsType> {
       this.log('Client does not match the environment');
       return;
     }
-    this.isReady = false;
+    console.log(options);
     this.taskQueue = [];
-    this.initAPP().then((id) => {
-      // 处理应用id
-      if (id && this.appID !== id) {
-        this.appID = id;
-      }
-      // 开始执行上报
-      this.isReady = true;
-      this.executeTaskQueue();
-    });
+    //修改appId 为name
+    this.appID = options.app.name;
+    // 开始执行上报
+    this.isReady = true;
+    this.executeTaskQueue();
   }
 
   /**
@@ -72,7 +68,7 @@ export abstract class Core<O extends BaseOptionsType> {
     const map = new Map<string, number>();
     for (const plugin of plugins) {
       const { name, monitor, transform } = plugin || {};
-      if(!name || !monitor || !transform || map.has(name)) {
+      if (!name || !monitor || !transform || map.has(name)) {
         this.log(`The plugin name [${name}] is duplicate, please modify it.`);
         return;
       }

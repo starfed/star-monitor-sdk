@@ -1,4 +1,4 @@
-import { StoreType, StoreTypes, TAG } from '@heimdallr-sdk/types';
+import { StoreType, StoreTypes, TAG } from '@star-monitor-sdk/types';
 
 function getStoreIns(type: StoreTypes) {
   let store = null;

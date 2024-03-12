@@ -1,4 +1,4 @@
-import { IAnyObject, MethodTypes } from '@heimdallr-sdk/types';
+import { IAnyObject, MethodTypes } from '@star-monitor-sdk/types';
 import { obj2query } from './base';
 
 /**

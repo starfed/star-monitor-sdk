@@ -1,4 +1,4 @@
-import { UnknownFunc } from '@heimdallr-sdk/types';
+import { UnknownFunc } from '@star-monitor-sdk/types';
 
 /**
  * 发布订阅类

@@ -6,8 +6,8 @@ import {
   ConsoleTypes,
   EventTypes,
   ReportDataType
-} from '@heimdallr-sdk/types';
-import { generateUUID, formatDate } from '@heimdallr-sdk/utils';
+} from '@star-monitor-sdk/types';
+import { generateUUID, formatDate } from '@star-monitor-sdk/utils';
 import { PromiseErrorType } from '../types';
 
 interface CollectedType {

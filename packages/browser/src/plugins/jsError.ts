@@ -6,8 +6,8 @@ import {
   BrowserBreadcrumbTypes,
   ConsoleTypes,
   BreadcrumbLevel
-} from '@heimdallr-sdk/types';
-import { generateUUID, formatDate } from '@heimdallr-sdk/utils';
+} from '@star-monitor-sdk/types';
+import { generateUUID, formatDate } from '@star-monitor-sdk/utils';
 import { CodeErrorType, ResourceErrorType } from '../types';
 
 interface CollectedType {
@@ -60,7 +60,7 @@ const errorPlugin: BasePluginType = {
         id,
         time,
         type: category,
-        breadcrumb,
+        //breadcrumb,
         data: {
           sub_type: BrowserErrorTypes.RESOURCEERROR,
           ...resourceData
@@ -81,7 +81,7 @@ const errorPlugin: BasePluginType = {
       id,
       time,
       type: category,
-      breadcrumb,
+      //breadcrumb,
       data: {
         sub_type: BrowserErrorTypes.CODEERROR,
         message,

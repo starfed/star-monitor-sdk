@@ -1,4 +1,4 @@
-import { BaseOptionsType, BreadcrumbLevel, BreadcrumbPushData } from '@heimdallr-sdk/types';
+import { BaseOptionsType, BreadcrumbLevel, BreadcrumbPushData } from '@star-monitor-sdk/types';
 /**
  * 用户行为栈存储类
  * @export
